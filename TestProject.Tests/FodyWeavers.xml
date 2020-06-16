@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Weavers xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="FodyWeavers.xsd">
+  <Tracer adapterAssembly="TestProject.Tests"
+          logManager="TestProject.Tests.Logger.LogManagerAdapter"
+          logger="TestProject.Tests.Logger.LoggerAdapter" 
+          staticLogger=""
+          traceConstructors="false" traceProperties="false">
+    <NoTrace pattern="TestProject.Tests.Logger+*" />
+    <TraceOn namespace="TestProject.Tests.Tests+*" class="public" method="private" />
+  </Tracer>
+  <MethodDecorator />
+</Weavers>
